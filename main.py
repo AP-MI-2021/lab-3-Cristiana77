@@ -19,6 +19,8 @@ def test_is_prim():
     assert is_prim(-5) == False
     assert is_prim(84) == False
 
+test_is_prim()
+
 def nr_prime(lista):
     '''
     Verifica daca elem listei sunt form din nr prim
@@ -33,6 +35,8 @@ def nr_prime(lista):
 def test_nr_prime():
     assert nr_prime([2, 3, 5, 9]) == False
     assert nr_prime([2, 3, 5, 7]) == True
+
+test_nr_prime()
 
 def get_longest_all_primes(l) -> list[int]:
     '''
@@ -51,6 +55,8 @@ def test_get_longest_all_primes():
     assert get_longest_all_primes([1, 2, 3, 4]) == [2, 3]
     assert get_longest_all_primes([10, 11, 13, 12, 13, 14, 15]) == [11, 13]
 
+test_get_longest_all_primes()
+
 def is_even (n):
     '''
     Determina daca numarul dat este par
@@ -66,6 +72,8 @@ def test_is_even():
     assert is_even(4) == True
     assert is_even(8) == True
     assert is_even(7) == False
+
+test_is_even()
 
 def get_even(lista):
     '''
@@ -101,9 +109,10 @@ def get_longest_all_even(l):
     return result
 
 def test_get_longest_all_even():
-    assert get_longest_all_even([1, 4, 5, 6, 8, 10]) == [6, 8, 10]
-    assert get_longest_all_even([100, 122, 154, 211]) == [100, 122, 154]
-    assert get_longest_all_even([50, 60, 70, 71, 88]) == [50, 60, 70]
+    assert get_longest_all_even([12, 13, 155, 211]) == [12]
+    assert get_longest_all_even([5, 6, 7]) == [6]
+
+test_get_longest_all_even()
 
 def is_nr_div(n):
     '''
@@ -122,6 +131,8 @@ def test_is_nr_div():
     assert is_nr_div(11) == 2
     assert is_nr_div(8) == 4
     assert is_nr_div(5) == 2
+
+test_is_nr_div()
 
 def get_nr_div(lista):
     '''
@@ -156,10 +167,10 @@ def get_longest_same_div_count(l):
     return result
 
 def test_get_longest_same_div_count():
-    assert get_longest_same_div_count([7, 5, 2, 3, 80]) == [7, 5, 2, 3]
-    assert get_longest_same_div_count([12, 45, 2]) == [12, 45]
-    assert get_longest_same_div_count([14, 8, 3, 202]) == [14, 8]
+    assert get_longest_same_div_count([7, 25, 44]) == [7]
+    assert get_longest_same_div_count([12, 81,2]) == [12]
 
+test_get_longest_same_div_count()
 
 def show_menu():
     print('''
